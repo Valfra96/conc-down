@@ -1,0 +1,21 @@
+<div class="container" *ngIf="timeLeft">
+  <h1 class="my-4 text-center">CONC DOWN</h1>
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">
+        <i class="bi bi-clock-fill"></i> <br />
+        Tempo rimanente <br />
+        al prossimo Conca Day:
+      </h5>
+      <p class="mt-3">
+        <span class="display-4">{{ timeLeft.days }}</span> giorni
+        <span class="display-4">{{ timeLeft.hours }}</span> ore
+        <span class="display-4">{{ timeLeft.minutes }}</span> minuti
+        <span class="display-4">{{ timeLeft.seconds }}</span> secondi
+      </p>
+    </div>
+  </div>
+  <div *ngIf="isConcTime" class="text-center">
+    <h1>It's Conc Time!</h1>
+  </div>
+</div>
